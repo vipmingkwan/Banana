@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("images/ป้ายพื้นหลัง.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* หน้าหลัก */
+h1, p {
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 30px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.product {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* หน้ารายละเอียด */
+.detail-box {
+    background: rgba(0,0,0,0.75);
+    color: white;
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.detail-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgb(255, 255, 255);
+}
